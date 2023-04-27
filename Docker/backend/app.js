@@ -1,4 +1,6 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
+const app = require('express')
+const mongoose  = require('mongoose')
 const fs = require('fs');
 
 const credentials = 'X509-cert-6588185658663266323.pem'
@@ -24,3 +26,5 @@ async function run() {
 }
 
 run().catch(console.dir);
+
+module.exports = app;

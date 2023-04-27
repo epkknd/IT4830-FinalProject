@@ -1,0 +1,15 @@
+version: '3.0'
+services:
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    ports:
+    - "4200:80"
+  backend: # name of the second service
+    build: 
+      context: backend
+      dockerfile: Dockerfile
+    ports:
+    - "3000:3000" #specify ports mapping
+    restart: on-failure
