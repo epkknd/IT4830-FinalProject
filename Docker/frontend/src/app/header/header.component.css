@@ -1,0 +1,38 @@
+mat-toolbar {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+
+#storeName{
+  text-align: center;
+  margin-right: 28px;
+}
+
+ul {
+  position: absolute;
+  right: 14px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(75, 75, 197);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  color: black;
+  background-color: white;
+}
