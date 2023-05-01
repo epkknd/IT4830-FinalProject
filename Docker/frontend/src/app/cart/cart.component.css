@@ -1,0 +1,44 @@
+.grid-container {
+  height: 50%;
+  margin: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  overflow: scroll;
+}
+
+/* Block style */
+.item-block {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Image style */
+.item-image {
+  max-width: 30%;
+  height: auto;
+}
+
+/* Name style */
+.item-name {
+  font-size: 0.8em;
+  margin: 10px 0;
+}
+
+/* Price style */
+.item-price {
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+.confirm-order {
+  width: 97%;
+  height: 40px;
+  margin-left: 20px;
+  margin-left: 20px;
+  bottom: 0;
+  background-color: orange;
+  color: black;
+
+}
