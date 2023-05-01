@@ -1,0 +1,33 @@
+/* Grid layout */
+.grid-container {
+  margin: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  overflow: scroll;
+}
+
+/* Block style */
+.item-block {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Image style */
+.item-image {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Name style */
+.item-name {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Price style */
+.item-price {
+  font-size: 1.2em;
+  font-weight: bold;
+}
