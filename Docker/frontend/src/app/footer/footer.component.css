@@ -1,0 +1,9 @@
+#footer{
+  position: absolute;
+  bottom: 0;
+}
+
+
+mat-toolbar {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
