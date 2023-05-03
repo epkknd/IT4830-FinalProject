@@ -1,50 +1,8 @@
 <div class="grid-container">
-  <div class="item-block">
-    <img class="item-image" src="../assets/product-placeholder-image.jpeg" alt="Item 1">
-    <h2 class="item-name">Item 1</h2>
-    <p class="item-price">$10.99</p>
-    <button>Add to Cart</button>
-  </div>
-  <div class="item-block">
-    <img class="item-image" src="../assets/product-placeholder-image.jpeg" alt="Item 2">
-    <h2 class="item-name">Item 2</h2>
-    <p class="item-price">$12.99</p>
-    <button>Add to Cart</button>
-  </div>
-  <div class="item-block">
-    <img class="item-image" src="../assets/product-placeholder-image.jpeg" alt="Item 3">
-    <h2 class="item-name">Item 3</h2>
-    <p class="item-price">$15.99</p>
-    <button>Add to Cart</button>
-  </div>
-  <div class="item-block">
-    <img class="item-image" src="../assets/product-placeholder-image.jpeg" alt="Item 4">
-    <h2 class="item-name">Item 4</h2>
-    <p class="item-price">$8.99</p>
-    <button>Add to Cart</button>
-  </div>
-  <div class="item-block">
-    <img class="item-image" src="../assets/product-placeholder-image.jpeg" alt="Item 5">
-    <h2 class="item-name">Item 5</h2>
-    <p class="item-price">$9.99</p>
-    <button>Add to Cart</button>
-  </div>
-  <div class="item-block">
-    <img class="item-image" src="../assets/product-placeholder-image.jpeg" alt="Item 6">
-    <h2 class="item-name">Item 6</h2>
-    <p class="item-price">$14.99</p>
-    <button>Add to Cart</button>
-  </div>
-  <div class="item-block">
-    <img class="item-image" src="../assets/product-placeholder-image.jpeg" alt="Item 6">
-    <h2 class="item-name">Item 7</h2>
-    <p class="item-price">$11.99</p>
-    <button>Add to Cart</button>
-  </div>
-  <div class="item-block">
-    <img class="item-image" src="../assets/product-placeholder-image.jpeg" alt="Item 6">
-    <h2 class="item-name">Item 8</h2>
-    <p class="item-price">$17.99</p>
-    <button>Add to Cart</button>
+  <div class = "item-block" *ngFor="let item of items">
+    <img class="item-image" src = "../assets/product-placeholder-image.jpeg">
+    <h2 class="item-name">{{item.name}}</h2>
+    <p class="item-price">{{item.price}}</p>
+    <button (click)="onSubmit(item)">Add to Cart</button>
   </div>
 </div>
