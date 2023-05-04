@@ -1,15 +1,23 @@
 version: '3.0'
 services:
   frontend:
+    container_name: frontend
     build:
       context: frontend
       dockerfile: Dockerfile
     ports:
-    - "4200:80"
-  backend: # name of the second service
+    - "80:80"
+    networks:
+      - network
+  backend:
+    container_name: backend
     build: 
       context: backend
       dockerfile: Dockerfile
-    ports:
-    - "3000:3000" #specify ports mapping
+    # ports:
+    # - "3000:3000"  # No need to expose ports on the backend, as the app should be accessed through the frontend
+    networks:
+      - network
     restart: on-failure
+networks:
+  network:

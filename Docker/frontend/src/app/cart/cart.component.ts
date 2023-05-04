@@ -4,7 +4,7 @@ import { StoreService } from '../store.service';
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  styleUrls: ['./cart.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CartComponent {

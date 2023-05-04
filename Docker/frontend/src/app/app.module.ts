@@ -8,6 +8,7 @@ import { StoreComponent } from './store/store.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { CartComponent } from './cart/cart.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,13 +16,13 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderComponent,
     FooterComponent,
     StoreComponent,
-    CartComponent,
-
+    CartComponent
   ],
   imports: [
     BrowserModule,
     MatToolbarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [StoreService],
   bootstrap: [AppComponent]

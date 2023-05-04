@@ -1,6 +1,6 @@
 export interface Item {
-    id: number;
-    image?: HTMLImageElement;
+    _id: string;
+    imagelink: string;
     name: string;
-    price: number;
+    price: string;
   }

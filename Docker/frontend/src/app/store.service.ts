@@ -21,7 +21,7 @@ export class StoreService {
 
   removeItem(item: Item) {
     for (let i = 0; i < this.cart.length; i++) {
-      if(this.cart[i].id == item.id) {
+      if(this.cart[i]._id == item._id) {
         this.cart.splice(i,1);
         break;
       }
