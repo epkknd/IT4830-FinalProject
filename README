@@ -1,0 +1,2 @@
+This docker-compose.yml will deploy a MEAN stack store app that uses 2 separate containers for frontend and backend.
+The frontend will be active at localhost:80
