@@ -1,6 +1,6 @@
 <div class="grid-container" style="overflow-y:scroll;">
   <div class = "item-block" *ngFor="let item of items">
-    <img class="item-image" src = "../assets/product-placeholder-image.jpeg">
+    <img class="item-image" src = "../assets/{{item.imagelink}}">
     <h2 class="item-name">{{item.name}}</h2>
     <p class="item-price">{{item.price}}</p>
     <button (click) = "removeItem(item)">Remove From Cart</button>
